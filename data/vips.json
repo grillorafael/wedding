@@ -26,5 +26,19 @@
             "facebook": "https://www.facebook.com/yayabastos",
             "image": "images/yaya.jpg"
         }
+    },
+    {
+        "bestman": {
+            "name": "Dimitri Argyriou",
+            "description": "",
+            "facebook": "",
+            "image": "images/dimitri.jpg"
+        },
+        "bridesmaid": {
+            "name": "Heloisa Bordallo",
+            "description": "",
+            "facebook": "",
+            "image": "images/heloisa.jpg"
+        }
     }
 ]
