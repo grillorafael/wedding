@@ -1,0 +1,13 @@
+{
+  "name": "wedding",
+  "version": "0.0.0",
+  "homepage": "https://github.com/grillorafael/wedding",
+  "authors": [
+    "Rafael Grillo <grillorafael@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.2.20"
+  }
+}

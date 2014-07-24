@@ -1,0 +1,30 @@
+[
+    {
+        "bestman": {
+            "name": "Pedro Mota",
+            "description": "",
+            "facebook": "https://www.facebook.com/pedro.mota.3998",
+            "image": "images/pmota.jpg"
+        },
+        "bridesmaid": {
+            "name": "Yasmin Bastos",
+            "description": "",
+            "facebook": "https://www.facebook.com/yayabastos",
+            "image": "images/yaya.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Ricardo Goldstein",
+            "description": "",
+            "facebook": "https://www.facebook.com/goldstein.ricardo",
+            "image": "images/rgoldstein.jpg"
+        },
+        "bridesmaid": {
+            "name": "Yasmin Bastos",
+            "description": "",
+            "facebook": "https://www.facebook.com/yayabastos",
+            "image": "images/yaya.jpg"
+        }
+    }
+]

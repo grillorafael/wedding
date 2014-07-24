@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='wedding'>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
 		<![endif]-->
 
 	</head>
-	<body id="top">
+	<body ng-controller='AppCtrl' id="top">
 
 		<a id="home"></a>
 
@@ -55,8 +55,7 @@
 
 		<div id="slides">
 			<div class="slides-container">
-				<img src="images/main-home.jpg" alt="" />
-				<img src="images/main-home-2.jpg" alt="" />
+				<img ng-repeat='image in slides' src="{{image}}" alt="" />
 			</div>
 			<div class="tint">
 				<div class="welcome text-center" data-scroll-reveal="enter from the top after 2s">
@@ -231,15 +230,15 @@
 						<p><span></span><i class="fa fa-heart"></i><span></span></p>
 					</div>
 				</div>
-				<div class="row row-margin">
+				<div ng-repeat='vip in vips' class="row row-margin">
 					<div class="col-sm-3 text-right" data-scroll-reveal="enter from the left after 0.25s">
-						<h5>Pedro Mota</h5>
+						<h5>{{vip.bestman.name}}</h5>
 						<h6>Padrinho</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
+						<p>{{vip.bestman.description}}</p>
 					</div>
 					<div class="col-sm-3" data-scroll-reveal="enter from the left after 0.25s">
-						<a href="https://www.facebook.com/pedro.mota.3998" target="_blank" class="hover-effect">
-							<img src="images/pmota.jpg" class="img-responsive img-circle" alt="" />
+						<a href="{{vip.bestman.facebook}}" target="_blank" class="hover-effect">
+							<img src="{{vip.bestman.image}}" class="img-responsive img-circle" alt="" />
 							<span class="img-circle">
 								<i class="fa fa-link fa-3x"></i>
 							</span>
@@ -247,110 +246,20 @@
 						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
 					</div>
 					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<a href="https://www.facebook.com/yayabastos" target="_blank" class="hover-effect">
-							<img src="images/yaya.jpg" class="img-responsive img-circle" alt="" />
+						<a href="{{vip.bridesmaid.facebook}}" target="_blank" class="hover-effect">
+							<img src="{{vip.bridesmaid.image}}" class="img-responsive img-circle" alt="" />
 							<span class="img-circle">
 								<i class="fa fa-link fa-3x"></i>
 							</span>
 						</a>
 					</div>
 					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<h5>Yasmin Bastos</h5>
+						<h5>{{vip.bridesmaid.name}}</h5>
 						<h6>Madrinha</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
+						<p>{{vip.bridesmaid.description}}</p>
 						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
 					</div>
 				</div>
-				<div class="row row-margin">
-					<div class="col-sm-3 text-right" data-scroll-reveal="enter from the left after 0.25s">
-						<h5>Ricardo Goldstein</h5>
-						<h6>Padrinho</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the left after 0.25s">
-						<a href="https://www.facebook.com/goldstein.ricardo" target="_blank" class="hover-effect">
-							<img src="images/rgoldstein.jpg" class="img-responsive img-circle" alt="" />
-							<span class="img-circle">
-								<i class="fa fa-link fa-3x"></i>
-							</span>
-						</a>
-						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
-					</div>
-					<!-- <div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<a href="https://www.facebook.com/yayabastos" target="_blank" class="hover-effect">
-							<img src="images/yaya.jpg" class="img-responsive img-circle" alt="" />
-							<span class="img-circle">
-								<i class="fa fa-link fa-3x"></i>
-							</span>
-						</a>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<h5>Yasmin Bastos</h5>
-						<h6>Madrinha</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
-						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
-					</div> -->
-				</div>
-				<!-- <div class="row row-margin">
-					<div class="col-sm-3 text-right" data-scroll-reveal="enter from the left after 0.25s">
-						<h5>John Connor</h5>
-						<h6>Groom's Father</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the left after 0.25s">
-						<a href="person1.html" class="hover-effect">
-							<img src="http://placehold.it/270x270.jpg" class="img-responsive img-circle" alt="" />
-							<span class="img-circle">
-								<i class="fa fa-link fa-3x"></i>
-							</span>
-						</a>
-						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<a href="person2.html" class="hover-effect">
-							<img src="http://placehold.it/270x270.jpg" class="img-responsive img-circle" alt="" />
-							<span class="img-circle">
-								<i class="fa fa-link fa-3x"></i>
-							</span>
-						</a>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<h5>William Jones</h5>
-						<h6>Bride's Father</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
-						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3 text-right" data-scroll-reveal="enter from the left after 0.25s">
-						<h5>Jane Connor</h5>
-						<h6>Groom's Mother</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the left after 0.25s">
-						<a href="person1.html" class="hover-effect">
-							<img src="http://placehold.it/270x270.jpg" class="img-responsive img-circle" alt="" />
-							<span class="img-circle">
-								<i class="fa fa-link fa-3x"></i>
-							</span>
-						</a>
-						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<a href="person2.html" class="hover-effect">
-							<img src="http://placehold.it/270x270.jpg" class="img-responsive img-circle" alt="" />
-							<span class="img-circle">
-								<i class="fa fa-link fa-3x"></i>
-							</span>
-						</a>
-					</div>
-					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
-						<h5>Beth Jones</h5>
-						<h6>Bride's Mother</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo.</p>
-						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
-					</div>
-				</div> -->
 			</div>
 		</section>
 
@@ -600,102 +509,14 @@
 				</div>
 				<div class="row" data-scroll-reveal>
 					<ul class="gallery">
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="images/gallery/01.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="images/gallery/01-mini.jpg" class="img-rounded img-responsive" alt="" />
+						<li ng-repeat='image in gallery' class="col-xs-4 col-sm-3 col-md-2">
+							<a href="{{image.full}}" class="fancybox hover-effect" data-fancybox-group="group">
+								<img src="{{image.mini}}" class="img-rounded img-responsive" alt="" />
 								<span class="img-rounded">
 									<i class="fa fa-search fa-3x"></i>
 								</span>
 							</a>
 						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="images/gallery/02.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="images/gallery/02-mini.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="images/gallery/03.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="images/gallery/03-mini.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="images/gallery/04.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="images/gallery/04-mini.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="images/gallery/05.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="images/gallery/05-mini.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="images/gallery/06.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="images/gallery/06-mini.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<!-- <li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="http://placehold.it/800x600.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="http://placehold.it/170x170.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="http://placehold.it/800x600.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="http://placehold.it/170x170.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="http://placehold.it/800x600.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="http://placehold.it/170x170.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="http://placehold.it/800x600.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="http://placehold.it/170x170.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="http://placehold.it/800x600.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="http://placehold.it/170x170.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li>
-						<li class="col-xs-4 col-sm-3 col-md-2">
-							<a href="http://placehold.it/800x600.jpg" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="http://placehold.it/170x170.jpg" class="img-rounded img-responsive" alt="" />
-								<span class="img-rounded">
-									<i class="fa fa-search fa-3x"></i>
-								</span>
-							</a>
-						</li> -->
 					</ul>
 				</div>
 			</div>
@@ -894,6 +715,10 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.10.2.min.js"></script>
 
+		<!-- AngularJS -->
+		<script src='lib/angular/angular.min.js'></script>
+		<script src='angular/app.js'></script>
+
 		<!-- Bootstrap Plugins -->
 		<script src="js/bootstrap.min.js"></script>
 
@@ -926,7 +751,5 @@
 
 		<!-- jQuery Settings -->
 		<script src="js/settings.js"></script>
-
-
 	</body>
 </html>

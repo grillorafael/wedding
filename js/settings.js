@@ -33,17 +33,6 @@
 
 		// ====================================================================
 
-		// Superslides
-
-		$('#slides').superslides({
-			play: 5000,
-			animation_speed: 2000,
-			animation: 'fade',
-			pagination: false
-		});
-
-		// ====================================================================
-
 		// Countdown
 
 		var weddingDate = new Date(Date.parse('2015-12-19'));
@@ -121,9 +110,8 @@
 				init: true
 			};
 
-			window.scrollReveal = new scrollReveal({reset: true});
+			new scrollReveal({reset: true});
 		}
-
 	})
 
 })(jQuery);

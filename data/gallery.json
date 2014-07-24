@@ -1,0 +1,26 @@
+[
+    {
+        "full": "images/gallery/01.jpg",
+        "mini": "images/gallery/01-mini.jpg"
+    },
+    {
+        "full": "images/gallery/02.jpg",
+        "mini": "images/gallery/02-mini.jpg"
+    },
+    {
+        "full": "images/gallery/03.jpg",
+        "mini": "images/gallery/03-mini.jpg"
+    },
+    {
+        "full": "images/gallery/04.jpg",
+        "mini": "images/gallery/04-mini.jpg"
+    },
+    {
+        "full": "images/gallery/05.jpg",
+        "mini": "images/gallery/05-mini.jpg"
+    },
+    {
+        "full": "images/gallery/06.jpg",
+        "mini": "images/gallery/06-mini.jpg"
+    }
+]
