@@ -1,7 +1,8 @@
 angular.module('wedding', [])
     .controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.reveal = function() {
-            new scrollReveal({reset: true});
+            scrollReveal.init();
+            // new scrollReveal({reset: true});
         }
 
         $scope.slidesRefresh = function() {

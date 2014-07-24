@@ -110,7 +110,7 @@
 				init: true
 			};
 
-			new scrollReveal({reset: true});
+			window.scrollReveal = new scrollReveal({reset: true});
 		}
 	})
 
