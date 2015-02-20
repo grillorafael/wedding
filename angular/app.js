@@ -2,7 +2,7 @@ angular.module('wedding', [])
     .controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.reveal = function() {
             scrollReveal.init();
-        }
+        };
 
         $scope.slidesRefresh = function() {
             setTimeout(function() {
@@ -13,7 +13,7 @@ angular.module('wedding', [])
                     pagination: false
                 });
             }, 200);
-        }
+        };
 
         $http.get('data/slides.json').
             success(function(data) {

@@ -22,5 +22,29 @@
     {
         "full": "images/gallery/06.jpg",
         "mini": "images/gallery/06-mini.jpg"
+    },
+    {
+        "full": "images/gallery/07.jpg",
+        "mini": "images/gallery/07-mini.jpg"
+    },
+    {
+        "full": "images/gallery/09.jpg",
+        "mini": "images/gallery/09-mini.jpg"
+    },
+    {
+        "full": "images/gallery/10.jpg",
+        "mini": "images/gallery/10-mini.jpg"
+    },
+    {
+        "full": "images/gallery/11.jpg",
+        "mini": "images/gallery/11-mini.jpg"
+    },
+    {
+        "full": "images/gallery/12.jpg",
+        "mini": "images/gallery/12-mini.jpg"
+    },
+    {
+        "full": "images/gallery/13.jpg",
+        "mini": "images/gallery/13-mini.jpg"
     }
 ]

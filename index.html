@@ -55,7 +55,7 @@
 
 		<div id="slides">
 			<div class="slides-container">
-				<img ng-repeat='image in slides' src="{{image}}" alt="" />
+				<img ng-repeat='image in slides' ng-src="{{image}}" alt="" />
 			</div>
 			<div class="tint">
 				<div class="welcome text-center" data-scroll-reveal="enter from the top after 2s">
@@ -87,7 +87,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#about">Sobre</a></li>
-						<!-- <li><a href="#story">Nossa História</a></li> -->
+						<li><a href="#story">Nossa História</a></li>
 						<li><a href="#people">VIP</a></li>
 						<!-- <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
@@ -109,6 +109,7 @@
 						</li> -->
 						<li><a href="#gallery">Galeria</a></li>
 						<li><a href="#location">Local</a></li>
+						<li><a href="#registry">Listas</a></li>
 					</ul>
 				</div>
 			</div>
@@ -135,7 +136,7 @@
 							</span>
 						</a>
 						<h5>Rafael Grillo</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin metus, faucibus fermentum leo. Nulla ut purus vel nunc ultricies dignissim at at nunc. Vivamus tempor eget lorem non commodo. Vivamus mattis massa in ipsum molestie, eu aliquet lectus pulvinar. Etiam sapien purus, vestibulum eu sollicitudin quis, ultrices vitae justo.</p>
+						<p>Nada pra falar, só que ele é chato e adora me fazer cosquinha.</p>
 						<ul class="social-icons">
 							<li><a href="https://www.facebook.com/rafaelgrilloabreu" target="_blank"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://twitter.com/grillorafael" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -166,57 +167,57 @@
 
 		<!-- ========== OUR STORY START ========== -->
 
-		<!-- <section id="story" style="background: #f5f4ec;">
+		<section id="story" style="background: #f5f4ec;">
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-sm-12 heading" data-scroll-reveal>
-						<h2>Our Love Story</h2>
+						<h2>Nossa História</h2>
 						<p><span></span><i class="fa fa-heart"></i><span></span></p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-4" data-scroll-reveal="enter from the left after 0.25s">
 						<a href="post.html" class="hover-effect">
-							<img src="http://placehold.it/370x370.jpg" class="img-responsive img-circle" alt="" />
+							<img src="images/onibus.png" class="img-responsive img-circle" alt="" />
 							<span class="img-circle">
 								<i class="fa fa-link fa-3x"></i>
 							</span>
 						</a>
-						<h6>We’ve met</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec convallis ipsum, et pharetra dolor. Praesent dignissim viverra metus sed fermentum. Nam ultricies felis ac augue convallis porttitor. Praesent enim erat, semper quis mollis eget, pharetra eu ligula. Integer commodo fringilla augue id ultricies. Maecenas vel tincidunt enim.</p>
+						<h6>Nos conhecemos</h6>
+						<p>02/06/2012 - Em ponto de ônibus, no ultimo lugar que você espera encontrar a pessoa com quem vai casar, mas, correndo o risco de soar clichê, é o que dizem, quando menos se espera é geralmente quando acontece. </p>
 						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
 					</div>
 					<div class="col-sm-4" data-scroll-reveal>
 						<a href="post.html" class="hover-effect">
-							<img src="http://placehold.it/370x370.jpg" class="img-responsive img-circle" alt="" />
+							<img src="images/007.jpg" class="img-responsive img-circle" alt="" />
 							<span class="img-circle">
 								<i class="fa fa-link fa-3x"></i>
 							</span>
 						</a>
-						<h6>First Date</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec convallis ipsum, et pharetra dolor. Praesent dignissim viverra metus sed fermentum. Nam ultricies felis ac augue convallis porttitor. Praesent enim erat, semper quis mollis eget, pharetra eu ligula. Integer commodo fringilla augue id ultricies. Maecenas vel tincidunt enim.</p>
+						<h6>Primeiro Beijo</h6>
+						<p>26/10/2012 - Depois de muito me enrolar, e de eu ja estar quase desistindo, ele decide me chamar pra ir ao cinema só com ele, sem o Pedro, que quase sempre estava com a gente. Eu pensei, se não for hoje, eu juro que desisto! </p>
 						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
 					</div>
 					<div class="col-sm-4" data-scroll-reveal="enter from the right after 0.5s">
 						<a href="post.html" class="hover-effect">
-							<img src="http://placehold.it/370x370.jpg" class="img-responsive img-circle" alt="" />
+							<img src="images/noivado.jpg" class="img-responsive img-circle" alt="" />
 							<span class="img-circle">
 								<i class="fa fa-link fa-3x"></i>
 							</span>
 						</a>
-						<h6>Engagement</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec convallis ipsum, et pharetra dolor. Praesent dignissim viverra metus sed fermentum. Nam ultricies felis ac augue convallis porttitor. Praesent enim erat, semper quis mollis eget, pharetra eu ligula. Integer commodo fringilla augue id ultricies. Maecenas vel tincidunt enim.</p>
+						<h6>Noivado</h6>
+						<p>O pedido? Ou melhor dizendo os pedidos? 12/06/2014 - Eu pedi com baloões e fotos nossas, - 19/06/2014 - ele pediu com chocolate. Na minha concepção, foi uma boa mistura. </p>
 						<div class="mobile-divider"><span></span><i class="fa fa-heart"></i><span></span></div>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-sm-12" data-scroll-reveal>
 						<p>&nbsp;</p>
 						<a href="blog.html" class="btn btn-lg btn-primary">Read The Whole story</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
-		</section> -->
+		</section>
 
 		<!-- ========== OUR STORY END ========== -->
 
@@ -238,7 +239,7 @@
 					</div>
 					<div class="col-sm-3" data-scroll-reveal="enter from the left after 0.25s">
 						<a href="{{vip.bestman.facebook}}" target="_blank" class="hover-effect">
-							<img src="{{vip.bestman.image}}" class="img-responsive img-circle" alt="" />
+							<img ng-src="{{vip.bestman.image}}" class="img-responsive img-circle" alt="" />
 							<span class="img-circle">
 								<i class="fa fa-link fa-3x"></i>
 							</span>
@@ -247,7 +248,7 @@
 					</div>
 					<div class="col-sm-3" data-scroll-reveal="enter from the right after 0.5s">
 						<a href="{{vip.bridesmaid.facebook}}" target="_blank" class="hover-effect">
-							<img src="{{vip.bridesmaid.image}}" class="img-responsive img-circle" alt="" />
+							<img ng-src="{{vip.bridesmaid.image}}" class="img-responsive img-circle" alt="" />
 							<span class="img-circle">
 								<i class="fa fa-link fa-3x"></i>
 							</span>
@@ -511,7 +512,7 @@
 					<ul class="gallery">
 						<li ng-repeat='image in gallery' class="col-xs-4 col-sm-3 col-md-2">
 							<a href="{{image.full}}" class="fancybox hover-effect" data-fancybox-group="group">
-								<img src="{{image.mini}}" class="img-rounded img-responsive" alt="" />
+								<img ng-src="{{image.mini}}" class="img-rounded img-responsive" alt="" />
 								<span class="img-rounded">
 									<i class="fa fa-search fa-3x"></i>
 								</span>
@@ -660,12 +661,11 @@
 		</section>
 
 		<!-- ========== REGISTRY START ========== -->
-		<!--
 		<section id="registry">
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-sm-12" data-scroll-reveal>
-						<p>We are registered at</p>
+						<p>Nossas listas!</p>
 					</div>
 				</div>
 				<div class="row">
@@ -691,7 +691,7 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 		<!-- ========== REGISTRY END ========== -->
 

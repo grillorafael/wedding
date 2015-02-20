@@ -4,13 +4,13 @@
             "name": "Pedro Mota",
             "description": "",
             "facebook": "https://www.facebook.com/pedro.mota.3998",
-            "image": "images/pmota.jpg"
+            "image": "images/vip/pmota.jpg"
         },
         "bridesmaid": {
             "name": "Yasmin Bastos",
             "description": "",
             "facebook": "https://www.facebook.com/yayabastos",
-            "image": "images/yaya.jpg"
+            "image": "images/vip/yaya.jpg"
         }
     },
     {
@@ -18,13 +18,13 @@
             "name": "Ricardo Goldstein",
             "description": "",
             "facebook": "https://www.facebook.com/goldstein.ricardo",
-            "image": "images/rgoldstein.jpg"
+            "image": "images/vip/rgoldstein.jpg"
         },
         "bridesmaid": {
-            "name": "Yasmin Bastos",
+            "name": "Denise Tieko",
             "description": "",
-            "facebook": "https://www.facebook.com/yayabastos",
-            "image": "images/yaya.jpg"
+            "facebook": "https://www.facebook.com/denise.tieko",
+            "image": "images/vip/denise.jpg"
         }
     },
     {
@@ -32,13 +32,55 @@
             "name": "Dimitri Argyriou",
             "description": "",
             "facebook": "",
-            "image": "images/dimitri.jpg"
+            "image": "images/vip/dimitri.jpg"
         },
         "bridesmaid": {
             "name": "Heloisa Bordallo",
             "description": "",
             "facebook": "",
-            "image": "images/heloisa.jpg"
+            "image": "images/vip/heloisa.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Gustavo Eyer",
+            "description": "",
+            "facebook": "https://www.facebook.com/gustavoeyer",
+            "image": "images/vip/gustavo.jpg"
+        },
+        "bridesmaid": {
+            "name": "Bruna Amaral",
+            "description": "",
+            "facebook": "https://www.facebook.com/bruna.amaral.733",
+            "image": "images/vip/bruna.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Felipe Grillo",
+            "description": "",
+            "facebook": "https://www.facebook.com/felipe.grillo.14",
+            "image": "images/vip/felipe.jpg"
+        },
+        "bridesmaid": {
+            "name": "Luiza Fernandes",
+            "description": "",
+            "facebook": "https://www.facebook.com/luiza.fernandes.3979",
+            "image": "images/vip/luiza.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Bruno Grillo",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/bruno.jpg"
+        },
+        "bridesmaid": {
+            "name": "Helena Knebel",
+            "description": "",
+            "facebook": "https://www.facebook.com/helena.knebel.3",
+            "image": "images/vip/helena.jpg"
         }
     }
 ]
