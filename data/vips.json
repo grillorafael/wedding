@@ -7,10 +7,10 @@
             "image": "images/vip/pmota.jpg"
         },
         "bridesmaid": {
-            "name": "Yasmin Bastos",
+            "name": "Isabella Garnier",
             "description": "",
-            "facebook": "https://www.facebook.com/yayabastos",
-            "image": "images/vip/yaya.jpg"
+            "facebook": "https://www.facebook.com/isabella.garnier?fref=ts",
+            "image": "images/vip/isa.jpg"
         }
     },
     {
@@ -38,7 +38,7 @@
             "name": "Heloisa Bordallo",
             "description": "",
             "facebook": "",
-            "image": "images/vip/heloisa.jpg"
+            "image": "images/vip/helo.jpg"
         }
     },
     {
@@ -81,6 +81,76 @@
             "description": "",
             "facebook": "https://www.facebook.com/helena.knebel.3",
             "image": "images/vip/helena.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Gustavo Sangreman",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/gus.jpg"
+        },
+        "bridesmaid": {
+            "name": "Caroline Fontana",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/carol.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Conrado Monteiro",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/conrado.jpg"
+        },
+        "bridesmaid": {
+            "name": "Ana Carolina Aragão",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/ana.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Philippe Maia",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/phil.jpg"
+        },
+        "bridesmaid": {
+            "name": "Priscila Mello",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/pri.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Fernando Cardoso",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/fer.jpg"
+        },
+        "bridesmaid": {
+            "name": "Flavia Viana",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/fla.jpg"
+        }
+    },
+    {
+        "bestman": {
+            "name": "Lucas Bordallo",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/lucas.jpg"
+        },
+        "bridesmaid": {
+            "name": "Paula Bordallo",
+            "description": "",
+            "facebook": "",
+            "image": "images/vip/paula.jpg"
         }
     }
 ]
