@@ -690,3 +690,14 @@ footer {
 .navbar {
 	min-height: 0px;
 }
+
+.list-image {
+	width: 100%;
+	height: auto;
+	/*background-image: url("../");
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	width: 100%;
+	display: block;*/
+}
