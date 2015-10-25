@@ -20,17 +20,18 @@ function cors() {
 
         exit(0);
     }
-
-    echo "You have CORS!";
 }
 
 cors();
 
+$postdata = file_get_contents("php://input");
+$request = json_decode($postdata);
+
 $from = 'Rafael Grillo <grillorafael@gmail.com>';
 $to = 'marialowen@gmail.com';
-$name = $_POST['name'];
-$guests = $_POST['guests'];
-$email = $_POST['email'];
+$name = $request->name;
+$guests = $request->guests;
+$email = $request->email;
 $subject = "Confirmação do convidado - $name";
 $message = "O convidado $name confirmou $guests convidados <br> De: $email";
 

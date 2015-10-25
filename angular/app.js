@@ -16,18 +16,7 @@ angular.module('wedding', [])
         };
 
         $scope.submit = function() {
-            $http({
-                url: 'http://rgrillo.com/mariaerafael/process.php',
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                data: $.param({
-                    name: $scope.rsvp.name,
-                    email: $scope.rsvp.email,
-                    guests: $scope.rsvp.guests
-                })
-            });
+            $http.post('http://rgrillo.com/mariaerafael/process.php', $scope.rsvp);
         };
 
         $http.get('data/slides.json').
