@@ -22,30 +22,35 @@ function cors() {
     }
 }
 
-cors();
+//cors();
 
 $postdata = file_get_contents("php://input");
+
 $request = json_decode($postdata);
 
 $from = 'Rafael Grillo <grillorafael@gmail.com>';
-$to = 'marialowen@gmail.com';
+$to = 'grillorafael@gmail.com';
 $name = $request->name;
 $guests = $request->guests;
 $email = $request->email;
 $subject = "Confirmação do convidado - $name";
 $message = "O convidado $name confirmou $guests convidados <br> De: $email";
 
+
 $ch = curl_init();
+
 
 curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 curl_setopt($ch, CURLOPT_USERPWD, 'api:key-0qsp-amfc75mfw-u0ggm-grp0b4jmis1');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-$plain = strip_tags(br2nl($message));
+$plain = strip_tags(str_replace("<br>", "\n", $message));
+
+
 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
 curl_setopt($ch, CURLOPT_URL, 'https://api.mailgun.net/v3/rgrillo.com/messages');
-curl_setopt($ch, CURLOPT_POSTFIELDS, array('from' => 'support@rgrillo.com',
+curl_setopt($ch, CURLOPT_POSTFIELDS, array('from' => "RSVP $name <support@rgrillo.com>",
     'to' => $to,
     'subject' => $subject,
     'html' => $message,
@@ -56,9 +61,9 @@ $j = json_decode(curl_exec($ch));
 $info = curl_getinfo($ch);
 
 if($info['http_code'] != 200) {
-	return json_encode($info);
+	echo json_encode($info);
 }
 
 curl_close($ch);
 
-return json_encode($j);
+echo json_encode($j);

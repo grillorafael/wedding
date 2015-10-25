@@ -1,5 +1,7 @@
 angular.module('wedding', [])
     .controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
+        $scope.mailSent = false;
+
         $scope.reveal = function() {
             scrollReveal.init();
         };
@@ -16,7 +18,9 @@ angular.module('wedding', [])
         };
 
         $scope.submit = function() {
-            $http.post('http://rgrillo.com/process.php', $scope.rsvp);
+            $http.post('http://rgrillo.com/process.php', $scope.rsvp).success(function() {
+                $scope.mailSent = true;
+            });
         };
 
         $http.get('data/slides.json').

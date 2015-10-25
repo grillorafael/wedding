@@ -617,7 +617,8 @@
 					<h2>RSVP</h2>
 					<p><span></span><i class="fa fa-heart"></i><span></span></p>
 				</div>
-				<form role="form" ng-submit='submit()'>
+				<h2 ng-if='mailSent'>Obrigado!</h2>
+				<form role="form" ng-submit='submit()' ng-if='!mailSent'>
 					<div class="row">
 						<div id="name-group" class="form-group col-xs-12">
 							<label for="inputName">Nome</label>
