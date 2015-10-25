@@ -18,7 +18,7 @@ angular.module('wedding', [])
         $scope.submit = function() {
             $http({
                 url: 'https://api:key-0qsp-amfc75mfw-u0ggm-grp0b4jmis1@api.mailgun.net/v3/rgrillo.com/messages',
-                method: 'GET',
+                method: 'POST',
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                 data: $.param({
                     from: "Rafael Grillo <grillorafael@gmail.com>",
