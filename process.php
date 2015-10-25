@@ -4,8 +4,9 @@ $from = 'Rafael Grillo <grillorafael@gmail.com>';
 $to = 'marialowen@gmail.com';
 $name = $_POST['name'];
 $guests = $_POST['guests'];
+$email = $_POST['email'];
 $subject = "Confirmação do convidado - $name";
-$message = "O convidado $name confirmou $guests convidados";
+$message = "O convidado $name confirmou $guests convidados <br> De: $email";
 
 $ch = curl_init();
 
@@ -27,8 +28,9 @@ $j = json_decode(curl_exec($ch));
 
 $info = curl_getinfo($ch);
 
-if($info['http_code'] != 200)
-    error("Fel 313: Vänligen meddela detta via E-post till support@".DOMAIN);
+if($info['http_code'] != 200) {
+	return json_encode($info);
+}
 
 curl_close($ch);
 
