@@ -617,23 +617,23 @@
 					<h2>RSVP</h2>
 					<p><span></span><i class="fa fa-heart"></i><span></span></p>
 				</div>
-				<form role="form" name="contactform" action="process.php">
+				<form role="form" ng-submit='submit()'>
 					<div class="row">
 						<div id="name-group" class="form-group col-xs-12">
 							<label for="inputName">Nome</label>
-							<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Fulaninho..">
+							<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Fulaninho.." ng-model='rsvp.name'>
 						</div>
 					</div>
 					<div class="row">
 						<div id="email-group" class="form-group col-xs-12">
 							<label for="inputEmail">Email</label>
-							<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="fulaninho@gmail.com">
+							<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="fulaninho@gmail.com" ng-model='rsvp.email'>
 						</div>
 					</div>
 					<div class="row">
 						<div id="guests-group" class="form-group col-xs-12">
 							<label for="selectGuests">Nº de convidados</label>
-							<select class="form-control" name="selectGuests" id="selectGuests">
+							<select class="form-control" name="selectGuests" id="selectGuests" ng-model='rsvp.guests'>
 								<option value="1" selected>1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>

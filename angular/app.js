@@ -15,6 +15,20 @@ angular.module('wedding', [])
             }, 200);
         };
 
+        $scope.submit = function() {
+            $http({
+                url: 'https://api:key-0qsp-amfc75mfw-u0ggm-grp0b4jmis1@api.mailgun.net/v3/rgrillo.com/messages',
+                method: 'GET',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                data: $.param({
+                    from: "Rafael Grillo <grillorafael@gmail.com>",
+                    to: $scope.rsvp.email,
+                    subject: "Confirmação de " + $scope.rsvp.name,
+                    text: "O convidado " + $scope.rsvp.name + " confirmou a presença de " + $scope.rsvp.guests + " convidados."
+                })
+            });
+        };
+
         $http.get('data/slides.json').
             success(function(data) {
                 $scope.slides = data;
