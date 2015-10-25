@@ -16,7 +16,7 @@ angular.module('wedding', [])
         };
 
         $scope.submit = function() {
-            $http.post('http://rgrillo.com/mariaerafael/process.php', $scope.rsvp);
+            $http.post('http://rgrillo.com/process.php', $scope.rsvp);
         };
 
         $http.get('data/slides.json').
