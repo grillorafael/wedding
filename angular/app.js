@@ -1,6 +1,7 @@
 angular.module('wedding', [])
     .controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.mailSent = false;
+        $scope.rsvp = {};
 
         $scope.reveal = function() {
             scrollReveal.init();
@@ -17,8 +18,8 @@ angular.module('wedding', [])
             }, 200);
         };
 
-        $scope.submit = function() {
-            $http.post('http://rgrillo.com/process.php', $scope.rsvp).success(function() {
+        $scope.submit = function(rsvp) {
+            $http.post('http://rgrillo.com/process.php', rsvp).success(function() {
                 $scope.mailSent = true;
             });
         };
