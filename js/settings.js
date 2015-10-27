@@ -47,7 +47,6 @@
 		// Countdown
 
 		var weddingDate = new Date(Date.parse('2015-12-19T19:00:00.000Z'));
-		console.log(weddingDate);
 		$(".countdown").countdown({
 			until: weddingDate,
 			format: 'ODHMS'

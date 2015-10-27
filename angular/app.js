@@ -19,9 +19,14 @@ angular.module('wedding', [])
         };
 
         $scope.submit = function(rsvp) {
-            $http.post('http://rgrillo.com/process.php', rsvp).success(function() {
-                $scope.mailSent = true;
-            });
+            if(rsvp) {
+                $http.post('http://rgrillo.com/process.php', rsvp).success(function() {
+                    $scope.mailSent = true;
+                });
+            }
+            else {
+                alert('Não foi possível enviar o formulário');
+            }
         };
 
         $http.get('data/slides.json').
