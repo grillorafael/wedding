@@ -19,7 +19,7 @@ angular.module('wedding', [])
         };
 
         $scope.submit = function(rsvp) {
-            if(rsvp) {
+            if(rsvp && rsvp.name && rsvp.guests) {
                 $http.post('http://rgrillo.com/process.php', rsvp).success(function() {
                     $scope.mailSent = true;
                 });
