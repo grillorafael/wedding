@@ -4,7 +4,12 @@ angular.module('wedding', [])
         $scope.rsvp = {};
 
         $scope.reveal = function() {
-            scrollReveal.init();
+            try {
+                scrollReveal.init();
+            }
+            catch(e) {
+                
+            }
         };
 
         $scope.slidesRefresh = function() {
