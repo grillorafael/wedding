@@ -8,7 +8,7 @@ angular.module('wedding', [])
                 scrollReveal.init();
             }
             catch(e) {
-                
+
             }
         };
 
@@ -27,6 +27,8 @@ angular.module('wedding', [])
             if(rsvp && rsvp.name && rsvp.guests) {
                 $http.post('http://rgrillo.com/process.php', rsvp).success(function() {
                     $scope.mailSent = true;
+                }).error(function() {
+                    alert('Não foi possível enviar o formulário');
                 });
             }
             else {
